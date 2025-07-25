@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EATSY Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark:bg-gray-900 dark:text-white">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-5 text-white bg-red-600 sticky top-0 z-50">
+      <div class="flex items-center space-x-2">
+        <img src="src/logo.png" alt="Eatsy Logo" class="h-10 w-10" />
+        <span class="text-2xl font-bold">EATSY</span>
+      </div>
+      
+      <ul class="flex space-x-6 items-center text-white font-semibold">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><button class="dark-mode-toggle px-2 py-1 border rounded-md">🌙</button></li>
+      </ul>
+
+      <div class="flex space-x-3">
+        <button class="login px-4 py-1 bg-white text-black rounded-md">Login</button>
+        <button class="register px-4 py-1 bg-black text-white rounded-md">Register</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="upperpic h-[600px] w-full bg-cover bg-center flex flex-col justify-center items-center text-white" style="background-image: url('src/Bgfoood.jpg')">
+      <h1 class="text-4xl md:text-6xl font-bold font-kalam drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer">EATSY</h1>
+      <h2 class="text-xl md:text-2xl font-['M_PLUS_Rounded_1c'] mt-2">Best food right on your doorstep</h2>
+      <div class="search bg-gray-100 text-black flex items-center mt-4 px-4 py-2 rounded-md w-11/12 md:w-1/2">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input
+          class="searchbar ml-2 w-full bg-transparent focus:outline-none"
+          type="text"
+          placeholder="Search for restaurant, cuisine or a dish"
+        />
+      </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="secondary my-8 flex flex-col items-center">
+      <div class="category flex flex-wrap justify-center gap-6">
+        <div class="card w-80 text-center bg-white rounded-lg shadow-md hover:scale-105 transition-transform">
+          <img src="src/DalMakhani.jpg" alt="Order Online" class="w-full h-40 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Order Online</h2>
+            <p class="text-gray-600">Stay home and order to your doorstep</p>
+          </div>
+        </div>
+
+        <div class="card w-80 text-center bg-white rounded-lg shadow-md hover:scale-105 transition-transform">
+          <img src="src/resta.jpg" alt="Dining" class="w-full h-40 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Dining</h2>
+            <p class="text-gray-600">View the city's favourite dining venues</p>
+          </div>
+        </div>
+
+        <div class="card w-80 text-center bg-white rounded-lg shadow-md hover:scale-105 transition-transform">
+          <img src="src/club.jpeg" alt="Nightlife & Clubs" class="w-full h-40 object-cover rounded-t-lg" />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Nightlife & Clubs</h2>
+            <p class="text-gray-600">Explore the city's top nightlife outlets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="third px-4 md:px-32">
+      <h1 class="text-3xl md:text-4xl font-bold font-['M_PLUS_Rounded_1c'] drop-shadow-xl mb-2">Collections</h1>
+      <p class="text-gray-800 dark:text-gray-300">Explore curated lists of top restaurants, cafes, pubs, and bars in Bhopal, based on trends</p>
+    </section>
+
+    <!-- Fourth Section -->
+    <section class="fourth mt-6 flex justify-center">
+      <div class="category2 flex flex-wrap justify-center gap-6">
+        <div class="card2 bg-white rounded-lg shadow-md w-64 h-[320px] hover:scale-105 transition-transform overflow-hidden">
+          <img src="src/fourth/Luxary.jpg" alt="Luxury" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">9 Great Cafes</h2>
+            <p class="text-gray-600">Stay home and order to your doorstep</p>
+          </div>
+        </div>
+
+        <div class="card2 bg-white rounded-lg shadow-md w-64 h-[320px] hover:scale-105 transition-transform overflow-hidden">
+          <img src="src/dining.avif" alt="Dining" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">9 Great Cafes</h2>
+            <p class="text-gray-600">Stay home and order to your doorstep</p>
+          </div>
+        </div>
+
+        <div class="card2 bg-white rounded-lg shadow-md w-64 h-[320px] hover:scale-105 transition-transform overflow-hidden">
+          <img src="src/pubs.avif" alt="Nightlife" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Nightlife & Clubs</h2>
+            <p class="text-gray-600">Explore the city's top nightlife outlets</p>
+          </div>
+        </div>
+
+        <div class="card2 bg-white rounded-lg shadow-md w-64 h-[320px] hover:scale-105 transition-transform overflow-hidden">
+          <img src="src/rooftop.webp" alt="Rooftop" class="w-full h-40 object-cover" />
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Dining</h2>
+            <p class="text-gray-600">View the city's favourite dining venues</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+      <p>&copy; 2025 EATSY. All rights reserved.</p>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+      document.querySelector('.dark-mode-toggle').addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>

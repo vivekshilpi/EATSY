@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=M+PLUS+Rounded+1c&display=swap");
+
+/* Only custom styles needed beyond Tailwind */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.search-icon {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.searchbar::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Optional hover effect if you prefer in CSS over Tailwind */
+.name:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+/* Fix for incorrect class typo */
+.midElements {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
